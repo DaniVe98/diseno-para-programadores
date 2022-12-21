@@ -3,3 +3,84 @@ $color-clearblue: #33FFC4;
 $color-yellow: #E0E354;
 $color-purple: #D154E3;
 $color-darkblue: #5EB9FF;
+
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
+
+$font-primary: "Bitter", serif;
+$font-secondary: "Sanchez", serif;
+
+$font-size-small: 25px;
+$font-size-medium: 35px;
+$font-size-large: 40px;
+$font-size-extra-large: 55px;
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1 {
+  color: $color-blue;
+  font-family: $font-primary;
+  font-size: $font-size-extra-large;
+  font-weight: 250;
+  line-height: 1;
+
+  @include for-size(m) {
+    font-size: $font-size-extra-large;
+  }
+}
+
+h2 {
+  color: $color-black;
+  font-family: $font-primary;
+  font-size: $font-size-medium;
+  font-weight: 230;
+  line-height: 1.3;
+}
+
+h3 {
+  color: $color-gray;
+  font-family: $font-primary;
+  font-size: $font-size-large;
+  font-weight: 280;
+  line-height: 1.2;
+
+  &.h3--primary {
+    color: $color-primary;
+  }
+}
+
+h4 {
+  color: $color-primary;
+  font-family: $font-primary;
+  font-size: $font-size-medium;
+  font-weight: 240;
+  line-height: 1.4;
+
+  &.h4--dark {
+    color: $color-white;
+  }
+}
+
+h5 {
+  color: $color-green;
+  font-family: $font-secondary;
+  font-size: $font-size-medium;
+  font-weight: 290;
+  line-height: 1.6;
+}
+
+p {
+  font-family: $font-secondary;
+  font-size: $font-size-small;
+  line-height: 1.3;
+  margin: 0;
+
+  &.p--light {
+    color: $color-orange;
+  }
+}
